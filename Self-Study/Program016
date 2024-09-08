@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Enter age group :</h2>
+    <form action="">
+      <label for="">
+        <input type="radio" name="age" value="0-19" />Under 19
+      </label>
+      <label for="">
+        <input type="radio" name="age" value="20-35" />20 - 35
+      </label>
+      <label for="">
+        <input type="radio" name="age" value="36-50" />36 - 50
+      </label>
+      <label for="">
+        <input type="radio" name="age" value="50+" />Above 50
+      </label>
+    </form>
+  </body>
+</html>
