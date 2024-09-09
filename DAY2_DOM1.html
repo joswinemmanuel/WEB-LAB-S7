@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript HTML DOM</h1>
+    <p>Add a new HTML Element.</p>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <script>
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is new PARAGRAPH.");
+        para.appendChild(node);
+        const element = document.getElementById("div1")
+        element.appendChild(para);
+    </script>
+
+</body>
+</html>
