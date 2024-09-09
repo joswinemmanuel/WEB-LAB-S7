@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Links-Collection-length</legend>
+            <a href="https://www.google.com">Google</a><br><br>
+            <a href="https://www.bing.com">Bing</a><br><br>
+            <a href="https://www.youtube.com">Youtube</a><br><br>
+            <a href="https://www.sjcetpalai.ac.in">SJCET</a><br><br>
+            <input type="button" value="Get Links" onclick="getLinks()">
+            <div id="divDisplay"></div>
+        </fieldset>
+    </form>
+
+    <script>
+        function getLinks() {
+            var links = document.links.length;
+            var divDisplay = document.getElementById("divDisplay");
+
+            divDisplay.innerHTML = '<br>Total Links: ' + links + '<br>';
+
+            for (var i = 0; i < links; i++) {
+                divDisplay.innerHTML += document.links[i].href + '<br>';
+            }
+        }
+    </script>
+</body>
+</html>
