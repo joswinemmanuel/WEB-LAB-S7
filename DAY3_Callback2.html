@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name, callback, callback2) {
+            document.write("Hello, " + name + '!<br>');
+            setTimeout(() => {
+                callback();
+                callback2();
+            }, 1000);
+        }
+
+        function sayGoodbye() {
+            document.write('Goodbye!<br>');
+        }
+
+        function saySeeYouLater() {
+            document.write('See you later!<br>');
+        }
+
+        //greet('Alice', sayGoodbye, saySeeYouLater);
+    </script>
+
+    <button onclick="greet('Joswin', sayGoodbye, saySeeYouLater)">Click here</button>
+</body>
+</html>
