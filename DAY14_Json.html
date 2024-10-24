@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Accessing JSON using JavaScript</h2>
+    <p id="demo"></p>
+    <script>
+        var obj = {"name" : "Joswin", "age" : 21, "city" : "New York" };
+        document.getElementById("demo").innerHTML = obj.name + "<br>";
+        for (x in obj) {
+            document.write(x + " = " + obj[x] + "<br>");
+        }
+    </script>
+</body>
+</html>
